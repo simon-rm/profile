@@ -1,0 +1,80 @@
+<!--
+  ROADMAP:
+  1. Make some guidelines
+  2. Create the HTML structure
+  3. Add the CSS
+  4. Add fancy effects
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet">
+  <link href="imported/wave/wave.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <script defer type="module" src="https://unpkg.com/@splinetool/viewer@1.0.53/build/spline-viewer.js"></script>
+  <title>Profile</title>
+</head>
+
+<body>
+  <nav>
+    <span class="logo">Simon R. Murcia</span>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Things I like</a></li>
+      <li><a href="#">Goals</a></li>
+    </ul>
+    <button><i class="fa-solid fa-bars"></i></button>
+  </nav>
+  <main>
+    <header id="hero">
+      <img class="profile-picture" src="img\profile.jpeg" alt="profile picture">
+      <h1 class="title"><div class="wavetext"><span class="neonText">Hello!</span> I'm <span class="waviy"><span>S</span><span>i</span><span>m</span><span>o</span><span>n</span></span></h1>
+      <h2 class="description">I'm an ever-learning Web Developer and CS student who enjoys embarking in challenging projects. I like working with small teams and driving projects to their succesful completion!</h2>
+     <div class="ocean"><div class="wave"></div></div>
+    </header>
+    <section id="things-i-like">
+      <h2 class="subtitle">Things I like</h2>
+        <spline-viewer id = "mario-kart-box" url="https://prod.spline.design/VONFei1isI7-HCkv/scene.splinecode"></spline-viewer>
+      <ul>
+        <li id="game-development" role="listitem"><span class="hobby-emoji">👾</span><span class="hobby-name">Game Development</span></li>
+        <li id="anime" role="listitem"><span class="hobby-emoji">👾</span><span class="hobby-name">Anime</span></li>
+        <li id="programming" role="listitem"><span class="hobby-emoji">💻</span><span class="hobby-name">Programming</span></li>
+        <li id="photography" role="listitem"><span class="hobby-emoji">📸</span><span class="hobby-name">Photography</span></li>
+        <li id="origami" role="listitem"><span class="hobby-emoji">🦢</span><span class="hobby-name">Origami</span></li>
+        <li id="crochet" role="listitem"><span class="hobby-emoji">🧵</span><span class="hobby-name">Crochet</span></li>
+      </ul>
+    </section>
+    <section id="goals">
+      <h2 class="subtitle">Goals</h2>
+      <spline-viewer id="particles" url="https://prod.spline.design/te9e0CrK2aZ7i620/scene.splinecode"></spline-viewer>
+      <ul>
+        <li role="listitem"><span class="goal-emoji">📚</span><span class="goal-name">Become a Web Developer</span></li>
+        <li role="listitem"><span class="goal-emoji">🎨</span><span class="goal-name">Make a Video Game</span></li>
+        <li role="listitem"><span class="goal-emoji">🎸</span><span class="goal-name">Learn Japanese</span></li>
+        <li role="listitem"><span class="goal-emoji">🏋️‍♂️</span><span class="goal-name">Run a Marathon</span></li>
+        <li role="listitem"><span class="goal-emoji">🧘‍♂️</span><span class="goal-name">Visit 20 countries</span></li>
+        <li role="listitem"><span class="goal-emoji">🧘‍♂️</span><span class="goal-name">Get fit</span></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <ul id="social-icons">
+      <li><a href="#"><i class="fab fa-github"></i></a></li>
+      <li><a href="#"><i class="fab fa-flickr"></i></a></li>
+      <li><a href="#"><i class="fab fa-codepen"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+    </ul>
+    <p>© 2023 Simon</p>
+  </footer>
+</body>
+
+</html>
